@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - PRUEBA</title>
+    <style>
+        .form {
+            margin: 0 0 2rem 0;
+        }
+
+        .form__field {
+            display: flex;
+            flex-direction: column;
+
+            width: 50%;
+            margin: 0 0 1rem 0;
+        }
+
+        .form__field:last-child input{
+            margin-top: 1rem;
+            width: 50%;
+
+        }
+
+        input[type] {
+            padding: 6px 0;
+        }
+
+        .list {
+            margin: 2rem 0;
+        }
+
+        .list button{
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+
+        .success, .error {
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+
+        .success {
+            background: green;
+            width: 50%;
+        }
+
+        .error {
+            background: red;
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="form" >
+            <div class="form__field">
+                <label for="product-name">Nombre Producto:</label>
+                <input type="text" name="product-name name" id="form__product-name">
+            </div>
+
+            <div class="form__field">
+                <label for="product-price">Valor Producto:</label>
+                <input type="text" name="product-price price" id="form__product-price">
+            </div>
+
+            <div class="form__field">
+                <label for="product-quantity">Cantidad:</label>
+                <input type="text" name="product-quantity quantity" id="form__product-quantity">
+            </div>
+
+            <div class="form__field">
+                <input type="submit" value="Ingresar" id="form__product-submit">
+            </div>
+        </form>
+
+        <div id="form__error"></div>
+    </div>
+
+    <hr>
+
+    <div class="list">
+        <button id="list__btn">Listar Productos</button>
+
+        <h2>Lista de Productos</h2>
+
+        <div id="list__output"></div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
